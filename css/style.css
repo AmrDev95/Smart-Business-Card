@@ -1,0 +1,118 @@
+:root{
+    --main-color: rgb(141,116,63);
+}
+
+.h-35{
+    height: 35%;
+}
+
+.bg-main-color{
+    background-color: var(--main-color);
+}
+
+.home-bg{
+    background-image: url(../images/Background1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.z-99{
+    z-index: 99999999;
+}
+
+.dotted-border{
+    border: dashed 2px grey;
+    color: grey;
+}
+
+.dotted-border:hover{
+    border: dashed 2px white;
+    color: white;
+}
+
+.home-effect{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo-width{
+    width: 90px;
+}
+
+.bg-theme{
+    background-color: rgb(26,26,26);
+}
+
+.bg-content{
+    background-color: rgb(38,38,38);
+}
+
+button:focus{
+    box-shadow: none !important;
+}
+
+.border-icons{
+    border: solid 2px transparent;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer !important;
+}
+
+.border-icons:hover{
+    border: solid 2px var(--main-color);
+    color: var(--main-color);
+}
+
+li{
+    cursor: pointer;
+}
+
+.nav-position{
+    top: 0;
+    left: 0;
+}
+
+.borderRadius{
+    border-radius: 15px;
+}
+
+.activeHover{
+    background-color: var(--main-color);
+}
+
+.listHover, .activeHover{
+    border: 2px solid transparent;
+    transition: all 0.5s;
+}
+
+.listHover:hover{
+    transform: scale(1.1);
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.activeHover:hover{
+    transform: scale(1.1);
+    border: 2px solid var(--main-color);
+    color: white;
+}
+
+.notifications{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0%);
+}
+
+
+@media screen and (min-width:200px) and (max-width:991px) {
+    .height-adjust{
+        height: auto !important;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="w-100 h-100 bg-black position-relative d-flex flex-column gap-4 justify-content-center align-items-center height-adjust home-bg">
+        <!-- Navbar -->
+        <div class="w-100 bg-theme text-white py-1 position-absolute  nav-position z-99">
+            <div class="container d-flex justify-content-between align-items-center">
+                <a href="#"><img src="images/v1ce.png" class="logo-width" alt=""></a>
+                <div class="d-flex">
+                    <button class="btn bg-transparent text-white "><i class="fa-solid fa-bell border-icons" id="notificationButton"></i></button>
+                    <button class="btn bg-transparent text-white "><i class="fa-solid fa-bars border-icons"></i></button>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar -->
+
+        <!-- home-effect -->
+        <div class="home-effect"></div>
+
+        <!-- list Div -->
+        <div class="container height-adjust z-99 pt-5 position-relative overflow-hidden">
+            <div class="text-white notifications d-flex justify-content-between align-items-center bg-black px-3 py-2 z-99" id="notificationDiv">
+                <h4 class="me-5 pe-5">Notifications</h4>
+                <button class="ms-5 ps-5 btn bg-transparent border-0"><i class="fa-solid text-white fa-ellipsis-vertical"></i></button>
+            </div>
+            <ul class="list-style-none text-white d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center container-fluid">
+                <li class="d-flex flex-column justify-content-center align-items-center py-3 bg-theme listHover rounded-3" id="addAction">
+                    <img src="images/star-dynamic-clay.png" class="w-25" alt="" id="addActionImg">
+                    <h4>Change action</h4>
+                </li>
+                <li class="d-flex flex-column justify-content-center align-items-center py-3 bg-theme listHover rounded-3" id="statistics">
+                    <img src="images/chart-dynamic-clay.png" class="w-25" alt="" id="statisticsImg">
+                    <h4>statistics</h4>
+                </li>
+                <li class="d-flex flex-column justify-content-center align-items-center py-3 bg-theme listHover rounded-3" id="settings">
+                    <img src="images/setting-dynamic-clay.png" class="w-25" alt="" id="settingsImg">
+                    <h4>Settings</h4>
+                </li>
+            </ul>
+
+            <ul class="list-style-none text-white d-flex flex-column flex-lg-row gap-3 justify-content-between align-items-center container-fluid">
+                <li class="d-flex flex-column justify-content-center align-items-center py-3 bg-theme listHover rounded-3" id="chat">
+                    <img src="images/chat-text-dynamic-clay.png" class="w-25" alt="" id="chatImg">
+                    <h4>Share</h4>
+                </li>
+                <li class="d-flex flex-column justify-content-center align-items-center py-3 activeHover rounded-3" id="status">
+                    <img src="images/bell-dynamic-premium.png" class="w-25" alt="" id="statusImg">
+                    <h4 id="activeStatus">Active</h4>
+                </li>
+            </ul>
+        </div>
+        <!-- End of list Div -->
+
+        <!-- Start of buttons Div -->
+        <div class="mx-auto d-flex position-relative z-99 mt-5">
+            <button class="btn bg-transparent dotted-border me-2 py-2 px-3"><i class="fa-solid fa-qrcode"></i> Scan product</button>
+            <button class="btn bg-transparent dotted-border ms-2 py-2 px-3"><i class="fa-solid fa-cart-arrow-down"></i> Buy Product</button>
+        </div>
+        <!-- End of buttons div -->
+
+
+        <!-- Content Div -->
+        <div class=""></div>
+        <!-- End of content Div -->
+
+
+    </header>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
