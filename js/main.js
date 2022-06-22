@@ -52,16 +52,20 @@ $ ( "#status" ).click(function(){
 });
 
 $( "#notificationButton" ).click(function(){
+    let notificationSize = $("#notificationDiv").css("width");
     if(notificationToggler==0){
-        $("#notificationDiv").animate({transform: "translate(-100%)"}, 1000);
+        $("#notificationDiv").animate({right: notificationSize}, 500);
         notificationToggler=1;
         console.log("hello");
     }
 
     else{
-        $("#notificationDiv").animate({transform : "100%"}, 1000);
+        $("#notificationDiv").animate({right : "0"}, 500);
         notificationToggler=0;
         console.log("aaaa");
     }
-})
+});
 
+$("#notificationDropDown").click(function(){
+    $("#notificationButtons").slideToggle(500);
+});

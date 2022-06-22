@@ -89,6 +89,19 @@ li{
     transition: all 0.5s;
 }
 
+.z-99999{
+    z-index: 99999;
+}
+
+.h-custom{
+    height: 100px;
+}
+
+.btns{
+    background-color: rgb(47,47,47) !important;
+    width: 150px;
+}
+
 .listHover:hover{
     transform: scale(1.1);
     border: 2px solid var(--main-color);
@@ -106,6 +119,11 @@ li{
     top: 0;
     right: 0;
     transform: translate(100%, 0%);
+    flex-direction: row;
+}
+
+#notificationButtons{
+    display: none;
 }
 
 
@@ -116,3 +134,4 @@ li{
         padding-bottom: 20px;
     }
 }
+
